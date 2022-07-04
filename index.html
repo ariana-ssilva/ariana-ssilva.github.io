@@ -1,44 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello world🌎!</title>
-
-    <style>
-        body{
-            margin: 0;    
-        }
-        .container-imagem {
-            position: relative;
-            height: 100vh;
-            width: 100vw;
-            background: url(https://images.unsplash.com/photo-1520034475321-cbe63696469a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
-            background-size: fill;
-        }
-        .greatings{
-            align-self: center;
-            background-color: #FFFFFFFF;
-            opacity: initial;
-            width: 450px;
-            height: 100px;
-            margin: auto;
-            opacity: 0.5;
-        }
-        h1{
-            color: black;
-            text-align: center;
-        }
-    </style>
+    <link href="/styles/style.css" rel="stylesheet">
+    <link href="/styles/fonts.css" rel="stylesheet">
+    <link href="/styles/media.css" rel="stylesheet">
+    <title>Ariana Silva</title>
 </head>
 
 <body>
-    <div class="container-imagem">
-        <div class="greatings">
-            <h1>That's all folks! See ya.</h1>
+    <header>
+        <div id="title">
+            <h1>Ariana</h1>
+            <h1>Silva</h1>
         </div>
-    
-    </div> 
+
+        <ul>
+            <a href="/cv.html">
+                <li>Curriculo</li>
+            </a>
+            <a href="#">
+                <li>Sobre mim</li>
+            </a>
+            <a href="#">
+                <li>Contato</li>
+            </a>
+        </ul>
+    </header>
+
+    <main>
+        <aside>
+            <h2><span>Entre em</span></h2>
+            <h2>contato</h2>
+            <form>
+                <input type="text" placeholder="Nome">
+                <input type="email" placeholder="E-mail">
+                <input type="text" placeholder="Assunto">
+                <input type="submit" value="Enviar">
+            </form>
+        </aside>
+        <article>
+            <span>
+                <div class="profile-picture">
+                    <img src="./components/images/profile.jpeg" alt="profile picture">
+                </div>
+            </span>
+        </article>
+
+
+    </main>
+
+
+    <section id="sobre-mim">
+         <div class="container-about">
+        <div class="left-about">
+           <h3>Sobre mim</h3>
+            <p>
+                Tenho 22 anos e moro no meio-oeste de Santa Catarina.
+                <br>
+                Sou apaixonada por música, é literalmente o que me move. Amo ler livros e aprender coisas novas.
+                <br>
+                Tenho um curso técnico em informática e de desenvolvimento de aplicativos Android e IOS com Flutter.
+                <br>
+                Estou estudando Java no momento, um curso fullstack oferecido pelo programa Entra21 - Blusoft.
+                <br>
+                Já trabalhei como desenvolvedora Jr. Atuava no levantamento de requisitos diretamente com o cliente, prototipação e execução de aplicativos mobile e sites.
+            </p>
+         </div>
+        <div class="about-gif">
+            <img src="/components/images/typing_cat.gif" alt="">
+        </div>
+      </div>
+    </section>
 </body>
+
 </html>
