@@ -136,10 +136,4 @@ input {
     width: 50px;
     color: rgb(255, 20, 147);
     padding-left: 10px;
-
-}
-
-.buttons-contact img:hover {
-    color: rgb(255, 20, 147);
-    transition: 0.3s all;
 }
