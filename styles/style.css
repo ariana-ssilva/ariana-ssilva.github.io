@@ -141,7 +141,7 @@ input {
 /* dino running */
 canvas {
     align-self: center;
-    height: 50%;
+    height:300px;
     touch-action: none;
-    width: 50%;
+    width: 600px;
   }
