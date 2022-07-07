@@ -137,3 +137,11 @@ input {
     color: rgb(255, 20, 147);
     padding-left: 10px;
 }
+
+/* dino running */
+canvas {
+    align-self: center;
+    height: 100%;
+    touch-action: none;
+    width: 100%;
+  }
