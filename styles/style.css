@@ -141,12 +141,12 @@ input {
 }
 
 /* dino running */
-#sos {
+/* #sos {
     align-self: center;
     height:300px;
     touch-action: none;
     width: 600px;
-}
+} */
 
 #canvas-mouse {
 	position: fixed;
