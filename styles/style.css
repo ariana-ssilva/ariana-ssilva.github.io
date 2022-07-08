@@ -139,9 +139,18 @@ input {
 }
 
 /* dino running */
-canvas {
+#sos {
     align-self: center;
     height:300px;
     touch-action: none;
     width: 600px;
-  }
+}
+
+#canvas-mouse {
+	position: fixed;
+	z-index: -1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
