@@ -16,9 +16,10 @@ header {
     align-items: center;
 }
 
-#img-logo{
+#img-logo {
     height: 80px;
-    width: 80px;;
+    width: 80px;
+    ;
 }
 
 #title {
@@ -134,9 +135,11 @@ input {
     margin-top: 100px;
     display: grid;
     width: 100%;
+    grid-column: 3fr 1fr;
     grid-template-columns: 3fr 1fr;
 
 }
+
 
 .contact-links {
     padding-left: 20px;
@@ -145,8 +148,11 @@ input {
 .buttons-contact img {
     height: 50px;
     width: 50px;
-    color: rgb(255, 20, 147);
     padding-left: 10px;
+}
+
+.buttons-contact img:hover {
+    color: lighten(#ffb600, 20%);
 }
 
 #canvas-mouse {
