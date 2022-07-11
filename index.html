@@ -1,186 +1,84 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/styles/style.css" rel="stylesheet">
-    <link href="/styles/fonts.css" rel="stylesheet">
-    <link href="/styles/media.css" rel="stylesheet">
-    <link rel="shortcut icon" href="components/images/favicon.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
-    <link rel="stylesheet" href="./style.css">
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <title>Ariana Silva</title>
+	<title>Sidebar 05</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="sidebar">
-        <div class="logo-details">
-            <div class="logo_name">Ariana Silva</div>
-            <i class='bx bx-menu' id="btn"></i>
-        </div>
-        <ul class="nav-list">
-            <li>
-                <a href="#">
-                    <i class='bx bx-star'></i>
-                    <span class="links_name">About me</span>
-                </a>
-                <span class="tooltip">About me</span>
-            </li>
-            <li>
-                <a href="#">
-                    <i class='bx bx-chat'></i>
-                    <span class="links_name">Contact</span>
-                </a>
-                <span class="tooltip">Contact</span>
-            </li>
-            <li>
-                <a href="#">
-                    <i class='bx bx-pie-chart-alt-2'></i>
-                    <span class="links_name">Experience</span>
-                </a>
-                <span class="tooltip">Experience</span>
-            </li>
+	<nav class="navbar bg-dark">
+		<div class="container-fluid">
+			<div class="custom-menu">
+				<button type="button" id="sidebarCollapse">
+					<i class="fa fa-bars"></i>
+					<span class="sr-only">Toggle Menu</span>
+				</button>
+			</div>
+			<form class="d-flex" role="search">
+				<div class="d-grid gap-2 d-md-flex justify-content-md-end">
+					<i class="bi bi-github"></i><button class="btn btn-primary me-md-2" type="button">Button</button>
+					<button class="btn btn-primary" type="button">Button</button>
+				  </div>
+			</form>
+		</div>
+	</nav>
 
-        </ul>
-    </div>
+	<div class="wrapper d-flex align-items-stretch">
+		<nav id="sidebar">
 
-    <section class="main-section">
-        <canvas id="canvas-mouse"></canvas>
-        <header>
-            <div id="title">
-                <h1><img id="img-logo" src="/components/images/logo_branco.png" alt=""></h1>
-                <h1>
-                    <li>Ariana Silva</li>
-                </h1>
-            </div>
-        </header>
-        <main>
-            <aside>
-                <h2><span>Hello,</span></h2>
-                <h2>I'm Ariana</h2>
-                <form>
-                    <input type="text" placeholder="Nome">
-                    <input type="email" placeholder="E-mail">
-                    <input type="text" placeholder="Assunto">
-                    <input type="submit" value="Enviar">
-                </form>
-            </aside>
-            <article>
-                <span>
-                    <div class="profile-picture">
-                        <img src="./components/images/profile.jpeg" alt="profile picture">
-                    </div>
-                </span>
-            </article>
-        </main>
-        <section id="sobre-mim">
-            <div class="container-about">
-                <div class="left-about">
-                    <h3>About me</h3>
-                    <p>
-                        I'm 22 y.o and I live in the middle-west of Santa Catarina state.
-                        <br>
-                        Music is my passion, it's literaly what moves me. I also enjoy reading books and learning new things;
-                        <br>
-                        I have a technical degree in Information Technology and also a course about Android and IOS Developing using Flutter.
-                        <br>
-                        Nowadays, I'm taking Java classes to become a Fullstack developer, offered by a program called Entra21 by Blusoft.
-                        <br>
-                        I already worked in development, as a Jr. Developer, prototyping mobile apps and developing some systems.
-                    </p>
-                </div>
-                <div class="about-gif">
-                    <img src="/components/images/typing_cat.gif" alt="">
-                </div>
-            </div>
-        </section>
-        <section id="curriculum">
-            <div class="container-cv">
-                <div class="left-cv">
-                    <h3><b>Contact</b></h3>
-                    <div class="buttons-contact">
-                        <a href="mailto:arianamoreira5021@gmail.com" mailto="mailto:arianamoreira5021@gmail.com"
-                            target="_blank"><img src="./components/images/email.png" alt="Email"></a>
-                        <a href="https://github.com/ariana-ssilva" target="_blank"><img
-                                src="./components/images/github.png" alt="Github"></a>
-                        <a href="https://www.linkedin.com/in/ariana-moreira-691a86217/" target="_blank"><img
-                                src="./components/images/linkedin.png" alt="Linkedin"></a>
-                        <a href="https://www.instagram.com/arianasilmor/" target="_blank"><img
-                                src="./components/images/instagram.png" alt="Instagram"></a>
-                    </div>
-                    <div>
-                        <h3><b>Curriculum</b></h3>
-                        <b> >> Desenvolvedora Jr.</b>
-                        <br>
-                        SANCON - Tecnologias para o Futuro - 2019 | 2020
-                        <br>
-                        Atuava no levantamento de requisitos diretamente com os clientes, prototipação e execução de
-                        aplicativos mobile, sites e no suporte para usuários das aplicações.
-                        Ferramentas de trabalho: CSS3, HTML5, Bootstrap,Materialize, SQLServer, PHP,Flutter, Dart,
-                        Firebase,AngularJS, Angular, JavaScript.
-                        <br><br>
-                        <b>>> Desenvolvedora Delphi</b>
-                        <br>
-                        CH Sistemas - 2020 | 2021
-                        <br>
-                        Atuava no desenvolvimento, manutenção e suporte de sistemas e banco de dados.
-                        <br><br>
-                        <b>>> Analista de Suporte de TI</b>
-                        <br>
-                        Andrade Materiais de Construção - 2021 <br>
-                        Atuo no suporte para usuários do sistema ERP Senior e realizando manutenção nas máquinas e rede.
-                        Customização de relatórios e administração de banco de dados SQL Server.
-                    </div>
-                    <div>
-                        <h4><b>Formação e cursos</b></h4>
-                        <b>Aprendizagem Industrial em informática</b>
-                        <br>
-                        SENAI Luzerna - 2018 | 2018
-                        <br><br>
-                        <b>Inglês - Básico ao Avançado</b>
-                        <br>
-                        SESC Joaçaba - 2013 | 2018
-                        <br><br>
-                        <b>Inglês - Conversação</b>
-                        Personal Teacher - 2019 | 2019
-                        <br><br>
-                        <b>Curso Técnico em Informática</b>
-                        <br>
-                        SENAI Luzerna - 2019 | 2021
-                        <br><br>
-                        <b>Desenvolvimento de aplicativos Android e IOS - Flutter</b>
-                        <br>
-                        Udemy - 2019 | 2019
-                        <br><br>
-                        <b>UI e UX Design</b>
-                        <br>
-                        Alura - 2021
-                        <br><br>
-                        <b>Introdução ao Figma</b>
-                        <br>
-                        Digital Inovation One - 2022
-                        <br><br>
-                        <b>Introdução à Ciência da Computação de Harvard</b>
-                        <br>
-                        Fundação Estudar - 2022 | 2022
-                    </div>
-                </div>
+			<div class="p-4">
+				<a class="navbar-brand" href="#">
+					<img class="logo-nav" src="/components/images/logo_branco.png" alt="" width="80" height="80"
+						class="d-inline-block align-text-center">
+					<h1>Ariana Silva</h1>
+				</a>
+				<ul class="list-unstyled components mb-5">
+					<li class="active">
+						<a href="#"><span class="fa fa-star mr-3"></span>About me</a>
+					</li>
+					<li>
+						<a href="#"><span class="fa fa-connectdevelop mr-3"></span>Contact</a>
+					</li>
+					<li>
+						<a href="#"><span class="fa fa-briefcase mr-3"></span>Experience</a>
+					</li>
+				</ul>
 
-            </div>
-            </div>
-        </section>
-    </section>
+				<div class="footer">
+					<p>Made with ♥ by Ariana Silva</p>
+				</div>
 
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js'></script>
-    <!-- <script src='https://unpkg.com/zdog@1.1.1/dist/zdog.dist.js'></script><script  src="/script/script.js"></script> -->
-    <script src="/script/mouse.js"></script>
-    <script src="/script/mobile-navbar.js"></script>
+			</div>
+		</nav>
 
+		<!-- Page Content  -->
+		<div id="content" class="p-4 p-md-5 pt-5">
 
+			<h2 class="mb-4">Sidebar #05</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+				dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+				ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+				fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+				deserunt mollit anim id est laborum.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+				dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+				ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+				fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+				deserunt mollit anim id est laborum.</p>
+		</div>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 
 </html>
