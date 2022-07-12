@@ -2,18 +2,16 @@
 <html lang="en">
 
 <head>
-    <title>Sidebar 05</title>
+    <title>Ariana Silva</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
-
+    <link rel="shortcut icon" href="components/images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-   
+<body id="body-custom">
     <nav class="navbar bg-dark">
         <div class="container-fluid">
             <div class="custom-menu">
@@ -37,13 +35,14 @@
         </div>
     </nav>
 
-    <div class="wrapper d-flex align-items-stretch">
+    <div class="d-flex align-items-stretch">
+        <canvas id="canvas-mouse"></canvas>
         <nav id="sidebar">
             <div class="p-4">
                 <a class="navbar-brand" href="#">
                     <img class="logo-nav" src="/components/images/logo_branco.png" alt="" width="80" height="80"
                         class="d-inline-block align-text-center">
-                    <h1>Ariana Silva</h1>
+                    <h2>Ariana Silva</h2>
                 </a>
                 <ul class="list-unstyled components mb-5">
                     <li class="active">
@@ -63,62 +62,23 @@
 
             </div>
         </nav>
-        <canvas id="canvas-mouse"></canvas>
-        <!-- Page Content  -->
-        <div id="content" class="p-4 p-md-5 pt-5">
-            <!-- <div class="container">
+        <div id="content">
+            <div class="container">
                 <div class="row">
                     <div class="col">
-                        <form class="row gy-2 gx-3 align-items-center">
-                            <div class="col-auto">
-                                <label class="visually-hidden" for="autoSizingInput">Name</label>
-                                <input type="text" class="form-control" id="autoSizingInput" placeholder="Jane Doe">
-                            </div>
-                            <div class="col-auto">
-                                <label class="visually-hidden" for="autoSizingInputGroup">Username</label>
-                                <div class="input-group">
-                                    <div class="input-group-text">@</div>
-                                    <input type="text" class="form-control" id="autoSizingInputGroup"
-                                        placeholder="Username">
-                                </div>
-                            </div>
-                            <div class="col-auto"></div>
+                        <h1>Hello,</h1>
+                        <h1 class="h1">I'm Ariana!</h1>
+                        <h3>This is my personal web page, I hope you like it.</h3>
+                        <label for="inputEmail4" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4">
+                            <label for="inputEmail4" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4">
                     </div>
-                    <div class="col-auto">
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                    <div class="col-6">
+                        <img class="profile-picture" src="/components/images/profile.jpeg" alt="">
                     </div>
-                    </form>
                 </div>
-                <div class="col">
-                    <span>
-                        <div class="profile-picture">
-                            <img src="./components/images/profile.jpeg" alt="profile picture">
-                        </div>
-                    </span>
-                </div>
-            </div> -->
-
-            <main>
-                <aside>
-                    <h2><span>Hello,</span></h2>
-                    <h2>I'm Ariana</h2>
-                    <form>
-                        <input type="text" placeholder="Nome">
-                        <input type="email" placeholder="E-mail">
-                        <input type="text" placeholder="Assunto">
-                        <input type="submit" value="Enviar">
-                    </form>
-                </aside>
-                <article>
-                    <span>
-                        <div class="profile-picture">
-                            <img src="./components/images/profile.jpeg" alt="profile picture">
-                        </div>
-                    </span>
-                </article>
-            </main>
-
-        </div>
+            </div>
     </div>
     </div>
 

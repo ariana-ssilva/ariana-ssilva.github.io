@@ -1,4 +1,21 @@
 /* CUSTOM CSS */
+
+*{
+  font-family: poppinsregular;
+}
+#body-custom{
+  /* background-color: red; */
+  margin: 0;
+  font-family: poppinsregular;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  width: 100%;
+  padding-left: 1rem !important;
+}
+
 .button-menu{
   background-color: transparent;
   border: none;
@@ -15,14 +32,10 @@
 .profile-picture {
   background-color: #aaa;
   border-radius: 50%;
-  /* -moz-box-shadow: 10px 10px 10px 10px rgba(255, 0, 208, 0.259); */
-  /* -webkit-box-shadow: 0px 20px 20px rgba(255, 0, 208, 0.259); */
   width: 500px;
   height: 500px;
   overflow: hidden;
   position: relative;
-  margin-left: 300px;
-
 }
 
 .profile-picture img {
@@ -42,6 +55,9 @@
   height: 100%;
 }
 
+.h1-styled{
+  color: rgb (255,20,147) !important;
+}
 
 
 
@@ -284,6 +300,7 @@ th {
 label {
   display: inline-block;
   margin-bottom: 0.5rem;
+  color: #fff
 }
 
 button {
@@ -440,6 +457,7 @@ h6,
 h1,
 .h1 {
   font-size: 2.5rem;
+  color: rgb(255, 20, 147) !important;
 }
 
 h2,
@@ -4877,7 +4895,7 @@ input[type="button"].btn-block {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 0.5rem 1rem;
-  background-color: rgb(34, 34, 34);
+  background-color: rgba(34, 34, 34, 0.55);
 }
 
 .navbar>.container,
@@ -4893,7 +4911,7 @@ input[type="button"].btn-block {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  background-color: rgb(34, 34, 34);
+  background-color: rgba(34, 34, 34, 0.55);
 }
 
 .navbar-brand {
@@ -4905,7 +4923,6 @@ input[type="button"].btn-block {
   line-height: inherit;
   white-space: nowrap;
   text-align: center;
-  background-color: rgb(34, 34, 34);
 }
 
 .navbar-brand:hover,
@@ -7592,7 +7609,7 @@ button.bg-light:focus {
 }
 
 .bg-dark {
-  background-color: rgb(34, 34, 34) !important;
+  background-color: rgba(34, 34, 34, 0.55) !important;
 }
 
 a.bg-dark:hover,
@@ -9482,9 +9499,11 @@ button.bg-dark:focus {
   padding-left: 1rem !important;
 }
 
-.p-4 {
+/* .p-4 {
   padding: 1.5rem !important;
-}
+  background-color: red;
+  height: 100%;
+} */
 
 .pt-4,
 .py-4 {
@@ -9510,10 +9529,10 @@ button.bg-dark:focus {
   padding: 3rem !important;
 }
 
-.pt-5,
+/* .pt-5,
 .py-5 {
   padding-top: 3rem !important;
-}
+} */
 
 .pr-5,
 .px-5 {
@@ -10371,10 +10390,6 @@ button.bg-dark:focus {
   .pl-md-4,
   .px-md-4 {
     padding-left: 1.5rem !important;
-  }
-
-  .p-md-5 {
-    padding: 3rem !important;
   }
 
   .pt-md-5,
@@ -11721,6 +11736,7 @@ a.text-dark:focus {
 
   .navbar {
     display: none;
+    background-color: rgba(34,34,34, 0.55);
   }
 
   .badge {
@@ -11758,14 +11774,14 @@ a.text-dark:focus {
   }
 }
 
-body {
+/* body {
   font-family: "Poppins", Arial, sans-serif;
   font-size: 14px;
   line-height: 1.8;
   font-weight: normal;
   background: #fafafa;
   color: gray;
-}
+} */
 
 a {
   -webkit-transition: .3s all ease;
@@ -11808,7 +11824,7 @@ h5,
 .h5 {
   line-height: 1.5;
   font-weight: 400;
-  font-family: "Poppins", Arial, sans-serif;
+  font-family: "Poppins",;
   color: #fff;
 }
 
@@ -11845,16 +11861,16 @@ h5,
 }
 
 #sidebar {
+  margin-top: 0;;
   max-width: 270px;
   min-height: 100%;
   background: rgba(34, 34, 34, 0.55);
-  border-right: 1px solid rgba(0,0,0,0.1);
-  /* box-shadow: 0 0px 10px 0 rgba(255, 255, 255, 0.1); */
-  /* color: #fff; */
+  border-right: 0.5px solid rgba(0,0,0,0.1);
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
   position: relative;
+  padding: 10px 10px 100px;
 }
 
 #sidebar .h6 {
