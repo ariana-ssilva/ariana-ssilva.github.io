@@ -1,10 +1,12 @@
 /* CUSTOM CSS */
 
-*{
+* {
   font-family: poppinsregular;
 }
-#body-custom{
+
+#body-custom {
   /* background-color: red; */
+  /* background-image: url(/components/images/cover.png); */
   margin: 0;
   font-family: poppinsregular;
   font-size: 1rem;
@@ -16,26 +18,28 @@
   padding-left: 1rem !important;
 }
 
-.button-menu{
+.button-menu {
   background-color: transparent;
   border: none;
 }
 
-#menu-icon-color{
+#menu-icon-color {
   color: white;
 }
 
-.btn-contact{
+.btn-contact {
   background-color: ;
 }
 
 .profile-picture {
   background-color: #aaa;
   border-radius: 50%;
-  width: 500px;
-  height: 500px;
+  width: 650px;
+  height: 650px;
   overflow: hidden;
   position: relative;
+  margin: 10px
+
 }
 
 .profile-picture img {
@@ -55,11 +59,18 @@
   height: 100%;
 }
 
-.h1-styled{
-  color: rgb (255,20,147) !important;
+.h1-styled {
+  color: rgb (255, 20, 147) !important;
 }
 
+.sidebar-a a {
+  font-size: 1.5rem;
+}
 
+.style-card-main{
+  background-color: rgb (34,34,34) !important;
+  border-radius: 10px;
+} 
 
 
 
@@ -2984,7 +2995,7 @@ fieldset:disabled a.btn {
 
 .btn-primary:hover {
   color: rgb(255, 20, 147);
-  background-color:#fff;
+  background-color: #fff;
   border-color: #fff;
 }
 
@@ -5377,7 +5388,7 @@ input[type="button"].btn-block {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
+  background-color: rgb(34,34,34);
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
@@ -11736,7 +11747,7 @@ a.text-dark:focus {
 
   .navbar {
     display: none;
-    background-color: rgba(34,34,34, 0.55);
+    background-color: rgba(34, 34, 34, 0.55);
   }
 
   .badge {
@@ -11824,7 +11835,7 @@ h5,
 .h5 {
   line-height: 1.5;
   font-weight: 400;
-  font-family: "Poppins",;
+  font-family: "Poppins", ;
   color: #fff;
 }
 
@@ -11861,11 +11872,12 @@ h5,
 }
 
 #sidebar {
-  margin-top: 0;;
+  margin-top: 0;
+  ;
   max-width: 270px;
   min-height: 100%;
   background: rgba(34, 34, 34, 0.55);
-  border-right: 0.5px solid rgba(0,0,0,0.1);
+  border-right: 0.5px solid rgba(0, 0, 0, 0.1);
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
@@ -12025,11 +12037,12 @@ a[data-toggle="collapse"] {
 
 #content {
   width: 100%;
-  padding: 0;
+  padding: 20px;
   min-height: 100vh;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
+  background-color: white;
 }
 
 .btn.btn-primary {
@@ -12040,8 +12053,8 @@ a[data-toggle="collapse"] {
 .btn.btn-primary:hover,
 .btn.btn-primary:focus {
   background: #fff !important;
-  border-color:#fff !important;
-  color:rgb(255, 20, 147) !important;
+  border-color: #fff !important;
+  color: rgb(255, 20, 147) !important;
 }
 
 .footer p {
