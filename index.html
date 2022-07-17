@@ -16,7 +16,7 @@
         <div class="container-fluid">
             <div class="custom-menu">
                 <!-- <button type="button" id="sidebarCollapse" class="button-menu"> -->
-                    <i class="fa fa-bars" id="menu-icon-color"></i>
+                <!-- <i class="fa fa-bars" id="menu-icon-color"></i> -->
                 <!-- </button> -->
             </div>
             <!-- links para contato -->
@@ -35,64 +35,76 @@
         </div>
     </nav>
 
-    <div class="d-flex align-items-stretch">
-        <canvas id="canvas-mouse"></canvas>
-        <nav id="sidebar">
-            <div class="p-4">
-                <a class="navbar-brand" href="#">
-                    <img class="logo-nav" src="/components/images/logo_branco.png" alt="" width="80" height="80"
-                        class="d-inline-block align-text-center">
-                    <h2>Ariana Silva</h2>
-                </a>
-                <ul class="list-unstyled components mb-5 sidebar-a">
-                    <li class="active">
-                        <a href="#"><span class="fa fa-star mr-3"></span>About me</a>
-                    </li>
-                    <li>
-                        <a href="#"><span class="fa fa-connectdevelop mr-3"></span>Contact</a>
-                    </li>
-                    <li>
-                        <a href="#"><span class="fa fa-briefcase mr-3"></span>Experience</a>
-                    </li>
-                </ul>
+    <main>
+        <section class="d-flex align-items-stretch">
 
-                <div class="footer">
-                    <p>Made with ♥ by Ariana Silva</p>
+            <canvas id="canvas-mouse"></canvas>
+            <nav id="sidebar">
+                <div class="p-4">
+                    <a class="navbar-brand" href="#">
+                        <img class="logo-nav" src="/components/images/logo_branco.png" alt="" width="80" height="80"
+                            class="d-inline-block align-text-center">
+                        <h2>Ariana Silva</h2>
+                    </a>
+                    <ul class="list-unstyled components mb-5 sidebar-a">
+                        <li class="active">
+                            <a href="#"><span class="fa fa-star mr-3"></span>About me</a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="fa fa-connectdevelop mr-3"></span>Contact</a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="fa fa-briefcase mr-3"></span>Experience</a>
+                        </li>
+                    </ul>
+
+                    <div class="footer">
+                        <p>Made with ♥ by Ariana Silva</p>
+                    </div>
+
                 </div>
-
-            </div>
-        </nav>
-        <div id="content">
-            
-                <section>
-                    <div class="container-fluid-main">
-                        <div class="style-card-main card-main card mb-3">
-                            <div class="row g-0">
-                              <div class="col-md-8">
-                                <div class="card-body">
-                                  <h5 class="card-title">Card title</h5>
-                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </nav>
+            <!-- card content -->
+            <section class="content">
+                <!-- main section -->
+                <section class="content-main">
+                    <div class="container-fluid">
+                        <div class="row g-0 card-body text-center">
+                            <div class="col-md-8 title-card-main">
+                                <h1 class="card-title-lg">Hi I'm Ariana,</h1>
+                                <h1 class="card-title-md">Java Jr. Fullstack Developer!</h1>
+                                <div classs="btn-card">
+                                    <button type="button" class="btn btn-primary btn-lg">About me</button>
+                                    <button type="button" class="btn btn-primary btn-lg">Contact me</button>
                                 </div>
-                              </div>
-                              <div class="col-md-4">
-                                <img src="/components/images/profile.jpeg" class="profile-picture rounded-circle img-thumbnail" alt="...">
-                              </div>
                             </div>
-                          </div>
-                        <div class="row">
-                            <div class="col">
-                                
-                            </div>
-                            <div class="col-6">
-                                
+                            <div class="col-md-4">
+                                <img src="/components/images/profile.jpeg"
+                                    class="profile-picture rounded-circle img-thumbnail" alt="...">
                             </div>
                         </div>
                     </div>
                 </section>
-            
-        </div>
-    </div>
+
+                <!-- about me section -->
+                <section class="content-about" style="padding-top: 50px;">
+                    <div class="container-fluid">
+                        <div class="row g-0 card-body text-center">
+                            <div class="col-md-6 title-card-main">
+                                <h1>About me</h1>
+                                <p>I'm 22 years old young woman, living at Santa Catarina state</p>
+                            </div>
+                            <div class="col-md-6">
+                                <img class="img-about-me" src="/components/images/typing_cat.gif" alt="...">
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+            </section>
+
+        </section>
+    </main>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.js"></script>
