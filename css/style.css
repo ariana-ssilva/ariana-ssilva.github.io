@@ -88,10 +88,30 @@
   background-color: rgb(34,34,34) ;
   border-radius: 20px;
   box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.37 );
+  padding-top: 0;
 }
 
 .title-card-main{
   margin-top: 65px;
+}
+
+.general-title{
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.general-text{
+  font-size: 25px;
+}
+  
+
+.img-about-me{
+  padding-top: 90px;
+}
+
+/* //////////////////////////////////////////////////////// */
+#imagens{
+  height: 500px !important;
 }
 /*******************************************************************************************************************************************************/
 :root {
@@ -11901,6 +11921,7 @@ h5,
   max-width: 270px;
   min-height: 100%;
   background: rgba(34, 34, 34, 0.55);
+  /* background-color: grey; */
   border-right: 0.5px solid rgba(0, 0, 0, 0.1);
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
