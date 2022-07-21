@@ -5,188 +5,758 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/styles/style.css" rel="stylesheet">
-    <link href="/styles/fonts.css" rel="stylesheet">
-    <link href="/styles/media.css" rel="stylesheet">
-    <!-- <link rel="shortcut icon" href="/components/images/favicon.png" type="image/x-icon" /> -->
-    <link rel="shortcut icon" href="components/images/favicon.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> -->
-    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
-    <link rel="stylesheet" href="./style.css">
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <title>Ariana Silva</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="images/logo_branco.png" type="image/x-icon">
+    <link rel="stylesheet" href="/style.css">
 </head>
 
 <body>
-    <div class="sidebar">
-        <div class="logo-details">
-            <div class="logo_name">Ariana Silva</div>
-            <i class='bx bx-menu' id="btn"></i>
+    <nav>
+        <div class="container">
+            <a href="#">
+                <img src="/images/favicon.png" alt="">
+            </a>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Tools & Skills</a></li>
+                <!-- <li><a href="#services">Services</a></li> -->
+                <!-- <li><a href="#portfolio">Portfolio</a></li> -->
+                <li><a href="#contact">Let's talk</a></li>
+            </ul>
+            <button id="menu-btn"><span class="material-icons-sharp">menu</span></button>
+            <button id="close-btn"><span class="material-icons-sharp">close</span></button>
         </div>
-        <ul class="nav-list">
-            <li>
-                <a href="#">
-                    <i class='bx bx-star'></i>
-                    <span class="links_name">About me</span>
-                </a>
-                <span class="tooltip">About me</span>
-            </li>
-            <li>
-                <a href="#">
-                    <i class='bx bx-chat'></i>
-                    <span class="links_name">Contact</span>
-                </a>
-                <span class="tooltip">Contact</span>
-            </li>
-            <li>
-                <a href="#">
-                    <i class='bx bx-pie-chart-alt-2'></i>
-                    <span class="links_name">Experience</span>
-                </a>
-                <span class="tooltip">Experience</span>
-            </li>
+    </nav>
 
-        </ul>
-    </div>
+    <!-- landing section -->
+    <section class="landing">
+        <div class="container">
+            <div class="socials">
+                <a href="https://www.facebook.com/arianaspoby/" target="_blank"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/arianasilmor/" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/ariana-ssilva" target="_blank"><i class="fa-brands fa-github-alt"></i></a>
+            </div>
 
-    <section class="main-section">
-        <canvas id="canvas-mouse"></canvas>
-        <header>
-            <div id="title">
-                <h1><img id="img-logo" src="/components/images/logo_branco.png" alt=""></h1>
-                <h1>
-                    <li>Ariana Silva</li>
-                </h1>
+            <div class="info">
+                <h1>Java Junior Fullstack Developer</h1>
+                <h3>Hi, I'm Ariana</h3>
+                <a href="#contact" class="btn btn-primary">Let's talk</a>
             </div>
-        </header>
-        <main>
-            <aside>
-                <h2><span>Hello,</span></h2>
-                <h2>I'm Ariana</h2>
-                <form>
-                    <input type="text" placeholder="Nome">
-                    <input type="email" placeholder="E-mail">
-                    <input type="text" placeholder="Assunto">
-                    <input type="submit" value="Enviar">
-                </form>
-            </aside>
-            <article>
-                <span>
-                    <div class="profile-picture">
-                        <img src="./components/images/profile.jpeg" alt="profile picture">
-                    </div>
-                </span>
-            </article>
-        </main>
-        <section id="sobre-mim">
-            <div class="container-about">
-                <div class="left-about">
-                    <h3>Sobre mim</h3>
-                    <p>
-                        Tenho 22 anos e moro no meio-oeste de Santa Catarina.
-                        <br>
-                        Sou apaixonada por música, é literalmente o que me move. Amo ler livros e aprender coisas novas.
-                        <br>
-                        Tenho um curso técnico em informática e de desenvolvimento de aplicativos Android e IOS com
-                        Flutter.
-                        <br>
-                        Estou estudando Java no momento, um curso fullstack oferecido pelo programa Entra21 - Blusoft.
-                        <br>
-                        Já trabalhei como desenvolvedora Jr. Atuava no levantamento de requisitos diretamente com o
-                        cliente,
-                        prototipação e execução de aplicativos mobile e sites.
-                    </p>
-                </div>
-                <div class="about-gif">
-                    <img src="/components/images/typing_cat.gif" alt="">
-                </div>
-            </div>
-        </section>
-        <section id="curriculum">
-            <div class="container-cv">
-                <div class="left-cv">
-                    <h3>Curriculo</h3>
-                    <h4><b>Contato</b></h4>
-                    <div class="buttons-contact">
-                        <a href="mailto:arianamoreira5021@gmail.com" mailto="mailto:arianamoreira5021@gmail.com"
-                            target="_blank"><img src="./components/images/email.png" alt="Email"></a>
-                        <a href="https://github.com/ariana-ssilva" target="_blank"><img
-                                src="./components/images/github.png" alt="Github"></a>
-                        <a href="https://www.linkedin.com/in/ariana-moreira-691a86217/" target="_blank"><img
-                                src="./components/images/linkedin.png" alt="Linkedin"></a>
-                        <a href="https://www.instagram.com/arianasilmor/" target="_blank"><img
-                                src="./components/images/instagram.png" alt="Instagram"></a>
-                    </div>
-                    <div>
-                        <h4><b>Experiência</b></h4>
-                        <b> >> Desenvolvedora Jr.</b>
-                        <br>
-                        SANCON - Tecnologias para o Futuro - 2019 | 2020
-                        <br>
-                        Atuava no levantamento de requisitos diretamente com os clientes, prototipação e execução de
-                        aplicativos mobile, sites e no suporte para usuários das aplicações.
-                        Ferramentas de trabalho: CSS3, HTML5, Bootstrap,Materialize, SQLServer, PHP,Flutter, Dart,
-                        Firebase,AngularJS, Angular, JavaScript.
-                        <br><br>
-                        <b>>> Desenvolvedora Delphi</b>
-                        <br>
-                        CH Sistemas - 2020 | 2021
-                        <br>
-                        Atuava no desenvolvimento, manutenção e suporte de sistemas e banco de dados.
-                        <br><br>
-                        <b>>> Analista de Suporte de TI</b>
-                        <br>
-                        Andrade Materiais de Construção - 2021 <br>
-                        Atuo no suporte para usuários do sistema ERP Senior e realizando manutenção nas máquinas e rede.
-                        Customização de relatórios e administração de banco de dados SQL Server.
-                    </div>
-                    <div>
-                        <h4><b>Formação e cursos</b></h4>
-                        <b>Aprendizagem Industrial em informática</b>
-                        <br>
-                        SENAI Luzerna - 2018 | 2018
-                        <br><br>
-                        <b>Inglês - Básico ao Avançado</b>
-                        <br>
-                        SESC Joaçaba - 2013 | 2018
-                        <br><br>
-                        <b>Inglês - Conversação</b>
-                        Personal Teacher - 2019 | 2019
-                        <br><br>
-                        <b>Curso Técnico em Informática</b>
-                        <br>
-                        SENAI Luzerna - 2019 | 2021
-                        <br><br>
-                        <b>Desenvolvimento de aplicativos Android e IOS - Flutter</b>
-                        <br>
-                        Udemy - 2019 | 2019
-                        <br><br>
-                        <b>UI e UX Design</b>
-                        <br>
-                        Alura - 2021
-                        <br><br>
-                        <b>Introdução ao Figma</b>
-                        <br>
-                        Digital Inovation One - 2022
-                        <br><br>
-                        <b>Introdução à Ciência da Computação de Harvard</b>
-                        <br>
-                        Fundação Estudar - 2022 | 2022
-                    </div>
+
+            <div class="profile-area">
+                <div class="outer-circle">
+                    <span><i class="fa-solid fa-laptop-code"></i></span>
+                    <span><i class="fa-solid fa-mug-saucer"></i></span>
+                    <span><i class="fa-solid fa-gears"></i></span>
+                    <span><i class="fa-solid fa-code-fork"></i></span>
                 </div>
 
+                <div class="inner-circle">
+                    <img src="/images/profile.jpeg" alt="">
+                </div>
             </div>
-            </div>
-        </section>
+        </div>
     </section>
+    <!-- end of landing -->
 
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js'></script>
-    <!-- <script src='https://unpkg.com/zdog@1.1.1/dist/zdog.dist.js'></script><script  src="/script/script.js"></script> -->
-    <script src="/script/mouse.js"></script>
-    <script src="/script/mobile-navbar.js"></script>
+    <!-- about section -->
+    <section class="about" id="about">
+        <h1>About</h1>
+        <div class="container">
+            <div class="image">
+                <img src="/images/profile2.png">
+            </div>
+
+            <div class="info">
+                <p>I'm 22 years old young woman, living at Santa Catarina state.</p>
+                <p>I'm a music lover, it's literaly what moves me. I love reading books and learning
+                    new things.</p>
+                <p>I have a IT Techninal degree and also a course about developing apps to Android
+                    and IOS using Flutter.</p>
+                <p>Nowadays I'm taking classes at Entra21 - by Blusoft, it's a Fullstack Java Course.
+                </p>
+                <p>I already worked in development, as a Jr. Developer, prototyping mobile apps and
+                    developing some systems. </p>
+                <!-- <a class="read-more">show more</a> -->
+                <!-- <a href="/images/1_partyanimsm2.gif" download class="btn btn-primary btn-"><i class="fa-solid fa-download"></i>
+                    Download CV</a> -->
+            </div>
+        </div>
+    </section>
+    <!-- end of about -->
+
+    <!-- skill section -->
+    <section class="skills" id="skills">
+        <h1>Tools & Skills</h1>
+        <div class="container">
+            <div class="skill">
+                <div class="head">
+                    <div class="left">
+                        <span class="fa-solid fa-pen-ruler"></span>
+                        <h4>Frontend Development</h4>
+                    </div>
+                    <span class="fa-solid fa-angle-down"></span>
+                </div>
+
+                <!-- ITEM START -->
+                <div class="items">
+                    <div class="item">
+                        <h5>HTML</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <h5>50%</h5>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h5>CSS</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <h5>50%</h5>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h5>Bootstrap</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <h5>50%</h5>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h5>Bootstrap</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <h5>50%</h5>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h5>Materialize</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <h5>30%</h5>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h5>Javascript</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <h5>15%</h5>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h5>Typescript</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <h5>30%</h5>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h5>Angular</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <h5>15%</h5>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h5>Markdown</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <h5>80%</h5>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- ITEM END -->
+            </div>
+
+            <div class="skill">
+                <div class="head">
+                    <div class="left">
+                        <span class="fa-solid fa-server"></span>
+                        <h4>Backend Development</h4>
+                    </div>
+                    <span class="fa-solid fa-angle-down"></span>
+                </div>
+
+                <!-- ITEM START -->
+                <div class="items">
+                    <div class="item">
+                        <h5>Java</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress-backend"></div>
+                            </div>
+                            <h5>50%</h5>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h5>Delphi</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress-backend"></div>
+                            </div>
+                            <h5>20%</h5>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="skill">
+                <div class="head">
+                    <div class="left">
+                        <span class="fa-solid fa-database"></span>
+                        <h4>Database</h4>
+                    </div>
+                    <span class="fa-solid fa-angle-down"></span>
+                </div>
+
+                <!-- ITEM START -->
+                <div class="items">
+                    <div class="item">
+                        <h5>MySql</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress-database"></div>
+                            </div>
+                            <h5>15%</h5>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h5>SqlServer</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress-database"></div>
+                            </div>
+                            <h5>15%</h5>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h5>Firebase</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress-database"></div>
+                            </div>
+                            <h5>20%</h5>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h5>Postgress</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress-database"></div>
+                            </div>
+                            <h5>20%</h5>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h5>Firebird</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress-database"></div>
+                            </div>
+                            <h5>15%</h5>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h5>SqlLite</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress-database"></div>
+                            </div>
+                            <h5>20%</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- ITEM END -->
+            </div>
+
+            <div class="skill">
+                <div class="head">
+                    <div class="left">
+                        <span class="fa-solid fa-mobile"></span>
+                        <h4>Mobile</h4>
+                    </div>
+                    <span class="fa-solid fa-angle-down"></span>
+                </div>
+
+                <!-- ITEM START -->
+                <div class="items">
+                    <div class="item">
+                        <h5>Flutter</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress-mobile"></div>
+                            </div>
+                            <h5>30%</h5>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h5>Android</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress-mobile"></div>
+                            </div>
+                            <h5>10%</h5>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+
+            <div class="skill">
+                <div class="head">
+                    <div class="left">
+                        <span class="fa-solid fa-fire"></span>
+                        <h4>IDE</h4>
+                    </div>
+                    <span class="fa-solid fa-angle-down"></span>
+                </div>
+
+                <!-- ITEM START -->
+                <div class="items">
+                    <div class="item">
+                        <h5>Android Studio</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress-ide"></div>
+                            </div>
+                            <h5>30%</h5>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h5>Visual Studio Code</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress-ide"></div>
+                            </div>
+                            <h5>70%</h5>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h5>Sublime</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress-ide"></div>
+                            </div>
+                            <h5>30%</h5>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h5>Netbeans</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress-ide"></div>
+                            </div>
+                            <h5>30%</h5>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h5>Eclipse</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress-ide"></div>
+                            </div>
+                            <h5>70%</h5>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h5>Repli.it</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress-ide"></div>
+                            </div>
+                            <h5>40%</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="head">
+                    <div class="left">
+                        <span class="fa-solid fa-code-branch"></span>
+                        <h4>Versioning</h4>
+                    </div>
+                    <span class="fa-solid fa-angle-down"></span>
+                </div>
+
+                <!-- ITEM START -->
+                <div class="items">
+                    <div class="item">
+                        <h5>Github</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress-versioning"></div>
+                            </div>
+                            <h5>80%</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- ITEM END -->
+            </div>
+
+            <div class="skill">
+                <div class="head">
+                    <div class="left">
+                        <span class="fa-solid fa-pen-ruler"></span>
+                        <h4>Prototyping</h4>
+                    </div>
+                    <span class="fa-solid fa-angle-down"></span>
+                </div>
+
+                <!-- ITEM START -->
+                <div class="items">
+                    <div class="item">
+                        <h5>Adobe XD</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress-prototyping"></div>
+                            </div>
+                            <h5>40%</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- ITEM END -->
+            </div>
+        </div>
+    </section>
+    <!-- end of skill section -->
+
+    <!-- services section -->
+    <!-- <section class="services" id="services">
+        <h1>Services</h1>
+        <div class="container">
+            <div class="service">
+                <span class="fa-solid fa-pen-ruler"></span>
+                <h3>UI/UX Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum et quod animi quo, eius error ratione
+                    impedit? Quia, laborum id.</p>
+            </div>
+            <div class="service">
+                <span class="fa-solid fa-address-card"></span>
+                <h3>Websites & web app Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum et quod animi quo, eius error ratione
+                    impedit? Quia, laborum id.</p>
+            </div>
+            <div class="service">
+                <span class="fa-solid fa-cubes"></span>
+                <h3>Mobile Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum et quod animi quo, eius error ratione
+                    impedit? Quia, laborum id.</p>
+            </div>
+        </div>
+    </section> -->
+    <!-- end of services section -->
+
+    <!-- portfolio section-->
+    <!-- <section class="recent-work" id="portfolio">
+        <div class="container">
+            <h4>My recent work</h4>
+            <h1>Here are some of my most recent solo projects</h1>
+            <div class="projects">
+                <div class="project">
+                    <div class="thumbnail">
+                        <img src="/images/jt.gif" alt="">
+                    </div>
+                    <h2>Complete Responsive E-Commerce</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id perferendis sunt ipsa molestias
+                        cumque
+                        fugiat vero, reiciendis expedita culpa dolore commodi doloremque accusamus nisi quo et? Eaque
+                        saepe
+                        facilis tenetur!</p>
+                    <div class="action">
+                        <a href="//github.com" target="_blank">GitHub</a>
+                        <a href="SITE PRA DEMO" target="_blank">Live demo</a>
+                    </div>
+                </div>
 
 
+                <div class="projects">
+                    <div class="project">
+                        <div class="thumbnail">
+                            <img src="/images/profile-11.jpg" alt="">
+                        </div>
+                        <h2>Complete Responsive Website</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id perferendis sunt ipsa molestias
+                            cumque
+                            fugiat vero, reiciendis expedita culpa dolore commodi doloremque accusamus nisi quo et?
+                            Eaque
+                            saepe
+                            facilis tenetur!</p>
+                        <div class="action">
+                            <a href="//github.com" target="_blank">GitHub</a>
+                            <a href="SITE PRA DEMO" target="_blank">Live demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projects">
+                    <div class="project">
+                        <div class="thumbnail">
+                            <img src="/images/profile-14.jpg" alt="">
+                        </div>
+                        <h2>Complete Potfolio</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id perferendis sunt ipsa molestias
+                            cumque
+                            fugiat vero, reiciendis expedita culpa dolore commodi doloremque accusamus nisi quo et?
+                            Eaque
+                            saepe
+                            facilis tenetur!</p>
+                        <div class="action">
+                            <a href="//github.com" target="_blank">GitHub</a>
+                            <a href="SITE PRA DEMO" target="_blank">Live demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projects">
+                    <div class="project">
+                        <div class="thumbnail">
+                            <img src="/images/profile-14.jpg" alt="">
+                        </div>
+                        <h2>Complete Potfolio</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id perferendis sunt ipsa molestias
+                            cumque
+                            fugiat vero, reiciendis expedita culpa dolore commodi doloremque accusamus nisi quo et?
+                            Eaque
+                            saepe
+                            facilis tenetur!</p>
+                        <div class="action">
+                            <a href="//github.com" target="_blank">GitHub</a>
+                            <a href="SITE PRA DEMO" target="_blank">Live demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- end of portfolio section -->
+
+    <!-- section testimonials -->
+    <!-- <section class="testimonials">
+        <h1>Testimonials</h1>
+        <div class="container swiper">
+            <div class="carousel swiper-wrapper">
+                <div class="testimonial swiper-slide">
+                    <div class="head">
+                        <div class="profile-area">
+                            <div class="avatar">
+                                <img src="/images/profile-9.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <h4>Diana Ayi</h4>
+                                <small>Civil Engineer (soviel.com)</small>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-solid fa-star"></span>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nulla itaque impedit enim ab.
+                        Soluta alias enim fuga corporis incidunt?</p>
+                </div>
+
+                <div class="testimonial swiper-slide">
+                    <div class="head">
+                        <div class="profile-area">
+                            <div class="avatar">
+                                <img src="/images/profile-5.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <h4>Jane Doe</h4>
+                                <small>Civil Engineer (soviel.com)</small>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-solid fa-star"></span>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nulla itaque impedit enim ab.
+                        Soluta alias enim fuga corporis incidunt?</p>
+                </div>
+
+                <div class="testimonial swiper-slide">
+                    <div class="head">
+                        <div class="profile-area">
+                            <div class="avatar">
+                                <img src="/images/profile-6.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <h4>Diana Ayi</h4>
+                                <small>Civil Engineer (soviel.com)</small>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-solid fa-star"></span>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nulla itaque impedit enim ab.
+                        Soluta alias enim fuga corporis incidunt?</p>
+                </div>
+
+                <div class="testimonial swiper-slide">
+                    <div class="head">
+                        <div class="profile-area">
+                            <div class="avatar">
+                                <img src="/images/profile-9.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <h4>Diana Ayi</h4>
+                                <small>Civil Engineer (soviel.com)</small>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-solid fa-star"></span>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nulla itaque impedit enim ab.
+                        Soluta alias enim fuga corporis incidunt?</p>
+                </div>
+
+                <div class="testimonial swiper-slide">
+                    <div class="head">
+                        <div class="profile-area">
+                            <div class="avatar">
+                                <img src="/images/profile-8.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <h4>Dave Simons</h4>
+                                <small>Civil Engineer (soviel.com)</small>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-solid fa-star"></span>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nulla itaque impedit enim ab.
+                        Soluta alias enim fuga corporis incidunt?</p>
+                </div>
+
+                <div class="testimonial swiper-slide">
+                    <div class="head">
+                        <div class="profile-area">
+                            <div class="avatar">
+                                <img src="/images/profile-9.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <h4>Steve Rogers</h4>
+                                <small>Civil Engineer (soviel.com)</small>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-solid fa-star"></span>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nulla itaque impedit enim ab.
+                        Soluta alias enim fuga corporis incidunt?</p>
+                </div>
+            </div>
+            <div class="swiper-scrollbar">
+                <div class="swiper-scrollbar-drag"></div>
+            </div>
+        </div>
+    </section> -->
+    <!-- end of testimonial section -->
+
+    <!-- contact section -->
+    <section class="contact" id="contact">
+        <div class="overlay">
+            <div class="container">
+                <h1>Let's talk</h1>
+                <p>Send an email and let's get in touch!</p>
+                <form action="https://formspree.io/f/meqnyabq" method="POST">
+                    <input type="text" name="Name" placeholder="Name" required>
+                    <input type="email" name="Email" placeholder="Email" required>
+                    <input type="text" name="Subject" placeholder="Subject" required>
+                    <textarea name="Message" placeholder="Message" required></textarea>
+                    <input type="submit" value="Submit" class="btn btn-primary">
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- end of contact section -->
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <a href="#">
+                <img src="/images/favicon.png" alt="">
+            </a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skill</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Let's talk</a></li>
+            </ul>
+            <div class="socials">
+                <a href="https://www.facebook.com/arianaspoby/" target="_blank"><i
+                    class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/arianasilmor/" target="_blank"><i
+                    class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/ariana-ssilva" target="_blank"><i class="fa-brands fa-github-alt"></i></a>
+            </div>
+
+        </div>
+        <div class="copyright">
+            Copyright &copy ariana-ssilva.github.io - Made with ❤️
+        </div>
+    </footer>
+
+    <!-- footer -->
+    <!-- swiper js -->
+   
+    <script src="/main.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- custom js -->
 </body>
 
 </html>
