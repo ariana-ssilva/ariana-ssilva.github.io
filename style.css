@@ -23,12 +23,12 @@
     text-decoration: none;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 10px;
     background: var(--color-primary-light);
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
     background: var(--color-primary);
 }
 
@@ -133,7 +133,7 @@ nav {
     border-bottom: 1px solid var(--color-light);
 }
 
-nav.show-box-shadow{
+nav.show-box-shadow {
     box-shadow: 0 00.6rem 1rem var(--color-primary-light);
     border: none;
 }
@@ -178,7 +178,7 @@ nav .container ul li a.active {
     color: var(--color-white);
 }
 
-nav .container img{
+nav .container img {
     height: 4rem;
 }
 
@@ -320,7 +320,7 @@ section.about .container .read-more-content {
 }
 
 /* toggle read more content using js */
-section.about .container .read-more-content.show-content{
+section.about .container .read-more-content.show-content {
     display: block;
 }
 
@@ -364,12 +364,12 @@ section.skills .skill .head .left {
     gap: 1rem;
 }
 
-section.skills .skill .items{
+section.skills .skill .items {
     display: none;
 }
 
 /* js show and hide items */
-section.skills .container .skill .items.show-items{
+section.skills .container .skill .items.show-items {
     display: block;
 }
 
@@ -384,7 +384,7 @@ section.skills .skill .item {
     transition: var(--transition);
 }
 
-section.skills .container .skill .items.show-items{
+section.skills .container .skill .items.show-items {
     display: block;
 }
 
@@ -410,6 +410,7 @@ section.skills .item .progress-bar .progress {
     width: 50%;
     background: var(--color-primary);
 }
+
 /* frontend */
 section.skills .item:nth-child(2) .progress-bar .progress {
     width: 50%;
@@ -426,18 +427,23 @@ section.skills .item:nth-child(4) .progress-bar .progress {
 section.skills .item:nth-child(5) .progress-bar .progress {
     width: 30%;
 }
+
 section.skills .item:nth-child(6) .progress-bar .progress {
     width: 15%;
 }
+
 section.skills .item:nth-child(7) .progress-bar .progress {
     width: 30%;
 }
+
 section.skills .item:nth-child(8) .progress-bar .progress {
     width: 15%;
 }
+
 section.skills .item:nth-child(9) .progress-bar .progress {
     width: 80%;
 }
+
 /* backend */
 section.skills .item .progress-bar .progress-backend {
     height: 100%;
@@ -452,7 +458,7 @@ section.skills .item:nth-child(2) .progress-bar .progress-backend {
 /* database */
 section.skills .item .progress-bar .progress-database {
     height: 100%;
-    width:15%;
+    width: 15%;
     background: var(--color-primary);
 }
 
@@ -479,7 +485,7 @@ section.skills .item:nth-child(6) .progress-bar .progress-database {
 /* mobile */
 section.skills .item .progress-bar .progress-mobile {
     height: 100%;
-    width:30%;
+    width: 30%;
     background: var(--color-primary);
 }
 
@@ -490,7 +496,7 @@ section.skills .item:nth-child(2) .progress-bar .progress-mobile {
 /* ide */
 section.skills .item .progress-bar .progress-ide {
     height: 100%;
-    width:30%;
+    width: 30%;
     background: var(--color-primary);
 }
 
@@ -596,7 +602,7 @@ section.recent-work .projects .project {
     gap: 1rem;
 }
 
-section.recent-work .projects .project img{
+section.recent-work .projects .project img {
     height: 100%;
     width: 65%;
 }
@@ -770,7 +776,7 @@ footer .container {
     gap: 2rem;
 }
 
-footer .container img{
+footer .container img {
     height: 4rem;
 }
 
@@ -819,7 +825,7 @@ footer .copyright {
         font-size: 0.6rem;
     }
 
-    .container{
+    .container {
         width: 94%;
     }
 
@@ -879,48 +885,48 @@ footer .copyright {
         overflow-x: hidden;
     }
 
-    section.landing .container{
+    section.landing .container {
         grid-template-columns: 1fr;
         grid-template-rows: 20% 50%;
         text-align: center;
         row-gap: 6rem;
     }
 
-    section.landing .container .socials{
+    section.landing .container .socials {
         display: none;
     }
 
-    section.landing .container .info{
+    section.landing .container .info {
         width: 90%;
         margin: 0 auto;
     }
 
-    section.landing .container .info h1{
+    section.landing .container .info h1 {
         text-align: center;
     }
 
-    section.landing .container .info p{
-       margin: 0 auto; 
-       width: 92%;
+    section.landing .container .info p {
+        margin: 0 auto;
+        width: 92%;
     }
 
-    section.landing .container .profile-area{
+    section.landing .container .profile-area {
         grid-row: 1;
         width: 94%;
         margin: 0 auto;
     }
 
-    section.landing .container .outer-circle{
+    section.landing .container .outer-circle {
         width: 16rem;
         height: 16rem;
     }
 
-    section.landing .container .inner-circle{
+    section.landing .container .inner-circle {
         width: 10rem;
         height: 10rem;
     }
 
-    section.landing .container .outer-circle span{
+    section.landing .container .outer-circle span {
         width: 3rem;
         height: 3rem;
     }
@@ -929,24 +935,24 @@ footer .copyright {
         left: calc(50% - 1.5rem);
         top: -1.5rem;
     }
-    
+
     section.landing .profile-area .outer-circle span:nth-child(2) {
         right: -1.5rem;
         top: calc(50% - 1.5rem);
     }
-    
+
     section.landing .profile-area .outer-circle span:nth-child(3) {
         left: -1.5rem;
         top: calc(50% - 1.5rem);
     }
-    
+
     section.landing .profile-area .outer-circle span:nth-child(4) {
         bottom: -1.5rem;
         left: calc(50% - 1.5rem);
     }
 
     /* about */
-    section.about .container{
+    section.about .container {
         grid-template-columns: 1fr;
         gap: 1rem;
         text-align: center;
@@ -954,37 +960,37 @@ footer .copyright {
 
     /* skills */
 
-    section.skills .container{
+    section.skills .container {
         width: 94%;
     }
 
     /* services */
-    section.services .container{
+    section.services .container {
         grid-template-columns: 1fr;
     }
 
     /* portfolio */
-    section.recent-work .container .projects{
+    section.recent-work .container .projects {
         grid-template-columns: 1fr;
     }
 
-    section.recent-work .container h1{
+    section.recent-work .container h1 {
         width: 94vw;
         margin: 1.4rem 0 1rem;
     }
 
     /* testimonials */
-    section.testimonials .container{
+    section.testimonials .container {
         grid-template-columns: 1fr;
         width: 94vw;
     }
 
-    section.testimonials .container .testimonial .head .stars span{
+    section.testimonials .container .testimonial .head .stars span {
         font-size: 0.8rem;
     }
 
     /* contact form */
-    section.contact .container{
+    section.contact .container {
         width: 94vw;
     }
 
@@ -994,14 +1000,19 @@ footer .copyright {
     }
 
     /* footer */
-    footer .container{
+    footer .container {
         flex-direction: column;
         gap: 3rem;
     }
 
-    footer .container ul{
+    footer .container ul {
         flex-direction: column;
         text-align: center;
         gap: 1.4rem;
     }
+}
+
+
+.video {
+    max-width: 100vw;
 }
