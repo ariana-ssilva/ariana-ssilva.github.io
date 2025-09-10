@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ariana Silva</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <link rel="shortcut icon" href="<%= asset_path 'logo_branco.png' %>" type="image/x-icon">
+    <link rel="stylesheet" href="<%= asset_path 'style.css' %>">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="#">
+                <img src="<%= asset_path 'favicon.png' %>" alt="">
+            </a>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Tools & Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Let's talk</a></li>
+                <li><a href="#caopanheiro">Cãopanheiro</a></li>
+            </ul>
+            <button id="menu-btn"><span class="material-icons-sharp">menu</span></button>
+            <button id="close-btn"><span class="material-icons-sharp">close</span></button>
+        </div>
+    </nav>
+    <%= yield %>
+    <footer>
+        <div class="container">
+            <a href="#">
+                <img src="<%= asset_path 'favicon.png' %>" alt="">
+            </a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Let's talk</a></li>
+                <li><a href="#caopanheiro">Cãopanheiro</a></li>
+            </ul>
+            <div class="socials">
+                <a href="https://www.facebook.com/arianaspoby/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/arianasilmor/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/ariana-ssilva" target="_blank"><i class="fa-brands fa-github-alt"></i></a>
+            </div>
+        </div>
+        <div class="copyright">
+            Copyright &copy ariana-ssilva.github.io - Made with ❤️
+        </div>
+    </footer>
+    <script src="<%= asset_path 'main.js' %>"></script>
+</body>
+</html>
